@@ -69,7 +69,7 @@ function AddLesson() {
         <h1 class="text-center">当前链接参数错误！</h1>
         <hr>
         <h3 class="text-center">正确查看姿势：</h3>
-        <P class="text-center text-warning"> 请在当前链接后面加上 <b class="text-success"> ?class=你的班级 </b>，例如：<b class="text-success">time.comnod.com?class=软件181</b> </P>
+        <P class="text-center text-warning"> 请在当前链接后面加上 <b class="text-success"> ?class=你的班级 </b>，例如：<b class="text-success"><a href="http://time.comnod.com?class=软件181">time.comnod.com?class=软件181</a></b> </P>
         <p class="text-center text-danger"> 如果你的课表还没有在我们网站上上传，将会出现参数错误，请发送你的课表到<b class="text-success"> admin@b8bb.cn </b>，我们将尽快完成收录，届时，我们将通过邮件通知您 </p>
         <hr>
         <h3 class="text-center"> 捐助作者 </h3>
