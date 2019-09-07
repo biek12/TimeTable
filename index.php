@@ -68,11 +68,19 @@ function AddLesson() {
     <div class="container">
         <h1 class="text-center">当前链接参数错误！</h1>
         <hr>
+        <h3 class="text-center">正确查看姿势：</h3>
         <P class="text-center text-warning"> 请在当前链接后面加上 <b class="text-success"> ?class=你的班级 </b>，例如：<b class="text-success">time.comnod.com?class=软件181</b> </P>
         <p class="text-center text-danger"> 如果你的课表还没有在我们网站上上传，将会出现参数错误，请发送你的课表到<b class="text-success"> admin@b8bb.cn </b>，我们将尽快完成收录，届时，我们将通过邮件通知您 </p>
         <hr>
         <h3 class="text-center"> 捐助作者 </h3>
         <img class="img-responsive center-block" src="http://img.b8bb.cn/1.jpg">
+        <hr>
+        <h3 class="text-center">开源说明</h3>
+        <p class="text-center">本程序已经开源到了GitHub中，点击如下链接即可查看代码，后续将更新按钮切换班级</p>
+        <div class="container-fluid">
+            <a class="center-block btn btn-success" href="https://github.com/biek12/TimeTable.git">走去看看这个产品的源码！</a>
+            <a class="center-block btn btn-success" style="margin-top: 10px" href="https://github.com/biek12">看作者的GitHub主页</a>
+        </div>
     </div>
 ETO;
 }
