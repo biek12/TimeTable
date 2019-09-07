@@ -65,6 +65,13 @@ print <<< EOT
             padding-top: 10px;
             font-size: 1.8vh;
         }
+        
+        .updateSource {
+            width: 75%;
+            height: 200px;
+            border: #ccc solid 1px;
+            border-radius: 5px;
+        }
     </style>
     <script type="text/javascript" src="http://file.comnod.cn/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="http://file.comnod.cn/template.js"></script>
