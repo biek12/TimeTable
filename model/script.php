@@ -29,11 +29,32 @@ print <<< EOT
             },
             gridOnClick: function (e) {
                 if (e.name != "") {
-                    console.log(e);
-                    alert(e.name);
+                    var str = cutStr(e.name);
+                    $('.sCourse').html("课程：" + str[0]);
+                    $('.sTech').html("教师：" + str[1]);
+                    if (str[2] != null) {
+                        $('.sRoom').html("教室：" + str[2]);
+                    }
+                    $('.mBox').fadeIn();
                 }
             }
         });
+        
+        function closeInfo() {
+            $('.mBox').fadeOut();
+        }
+        
+        // 切割字符串
+        function cutStr(str) {
+            // 字符串：算法与程序设计项目实践@张强 - CSB402
+            // 先进行第一次切割，将 @字符替换成 .
+            str = str.split("@").join(".");
+            // 再进行第二次切割，将 - 字符串替换成 .
+            str = str.split(" - ").join(".");
+            // 再通过split(".") ，将每个逗号处将它分解，最终切割成 [ "算法与程序设计项目实践", "张强", "CSB402" ]
+            str = str.split('.');
+            return str;
+        }
     </script>
 EOT;
 

@@ -41,7 +41,19 @@ function Lesson($class) {
             <p class="text-right">$class</p>
         </div>
         <hr>
+        <p class="container-fluid text-center text-danger"><b>温馨提示：如果课程信息显示不完整，可点击该节课查看课程详情</b></p>
         <div class="main"></div>
+        <div class="mBox" style="display: none">
+            <MessageBox class="center-block justify-content-center">
+                <stitle class="center-block bg-warning text-center">课程信息</stitle>
+                <sBox class="center-block bg-success">
+                    <p class="sCourse"></p>
+                    <p class="sTech"></p>
+                    <p class="sRoom"></p>
+                </sBox>
+                <a onclick="closeInfo()" href="javascript: void(0);"></a>
+            </MessageBox>
+        </div>
         <script id="TimeTable" type="text/html">
             <main id="main" class="container-fluid">
                 <div id="coursesTable"></div>
